@@ -1,7 +1,7 @@
 import React from 'react'
 import MachineOperation from './views/machineOperation/MachineOperation'
 import SlotStatus from './views/machineOperation/SlotStatus'
-import AdSetting from './views/machineOperation/adSetting'
+import AdSetting from './views/machineOperation/AdSetting'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
