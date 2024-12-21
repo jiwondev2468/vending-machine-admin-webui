@@ -446,6 +446,28 @@ const _nav = [
     href: 'https://coreui.io/react/docs/templates/installation/',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
+  {
+    component: CNavGroup,
+    name: '자판기 운영',
+    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: '상태조회',
+        to: '/machine-operation/status',
+      },
+      {
+        component: CNavItem,
+        name: '슬롯현황',
+        to: '/machine-operation/slot',
+      },
+      {
+        component: CNavItem,
+        name: '광고관리',
+        to: '/machine-operation/advertisement',
+      },
+    ],
+  },
 ]
 
 export default _nav

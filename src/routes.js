@@ -1,4 +1,7 @@
 import React from 'react'
+import MachineOperation from './views/machineOperation/MachineOperation'
+import SlotStatus from './views/machineOperation/SlotStatus'
+import AdSetting from './views/machineOperation/adSetting'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
@@ -97,6 +100,10 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
   { path: '/widgets', name: 'Widgets', element: Widgets },
+
+  { path: '/machine-operation/status', name: 'MachineOperation', element: MachineOperation },
+  { path: '/machine-operation/slot', name: 'MachineOperation', element: SlotStatus },
+  { path: '/machine-operation/advertisement', name: 'MachineOperation', element: AdSetting },
 ]
 
 export default routes
